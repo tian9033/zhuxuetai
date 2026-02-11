@@ -5,5 +5,5 @@ import tailwind from '@astrojs/tailwind';
 export default defineConfig({
   integrations: [tailwind()],
   base: '/zhuxuetai/',
-  site: 'https://yourname.github.io',
+  site: 'https://tian9033.github.io',
 });
