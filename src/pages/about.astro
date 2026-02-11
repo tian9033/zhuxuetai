@@ -29,73 +29,73 @@ import Sidebar from '../components/Sidebar.astro';
         <!-- 主内容区 -->
         <main class="flex-1">
             <!-- 页面标题 -->
-            <section class="py-12 px-4 md:px-8 bg-gradient-to-b from-blue-50 to-white">
+            <section class="py-10 sm:py-12 px-4 md:px-8 bg-gradient-to-b from-blue-50 to-white">
                 <div class="max-w-4xl mx-auto">
-                    <h1 class="text-3xl font-bold mb-4 text-primary">关于筑学台</h1>
+                    <h1 class="text-2xl sm:text-3xl font-bold mb-4 text-primary">关于筑学台</h1>
                 </div>
             </section>
 
             <!-- 关于内容 -->
-            <section class="py-12 px-4 md:px-8">
+            <section class="py-10 sm:py-12 px-4 md:px-8">
                 <div class="max-w-4xl mx-auto">
                     <!-- 筑工身份介绍 -->
-                    <div class="mb-10">
-                        <h2 class="text-xl font-bold mb-4">筑工身份</h2>
-                        <p class="text-gray-700 leading-relaxed">
+                    <div class="mb-8 sm:mb-10">
+                        <h2 class="text-lg sm:text-xl font-bold mb-4">筑工身份</h2>
+                        <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
                             筑学台的创立者是一群深耕教育领域多年的「筑工」——我们既是教育实践者，也是认知科学的研究者。我们相信，教育的本质是构建认知的阶梯，而不是简单的知识灌输。在信息爆炸的时代，我们致力于为家庭提供系统化的学习工具与方法论，帮助学生建立可持续的学习能力。
                         </p>
                     </div>
 
                     <!-- 使命陈述 -->
-                    <div class="mb-10 p-6 bg-blue-50 rounded-lg">
-                        <h2 class="text-xl font-bold mb-4 text-primary">使命陈述</h2>
-                        <p class="text-gray-700 leading-relaxed">
+                    <div class="mb-8 sm:mb-10 p-5 sm:p-6 bg-blue-50 rounded-lg">
+                        <h2 class="text-lg sm:text-xl font-bold mb-4 text-primary">使命陈述</h2>
+                        <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
                             帮助家庭、个人建立可持续的学习与认知系统，以科学逻辑对冲教育熵增，守护家庭成长的独立航标。
                         </p>
-                        <p class="text-gray-700 leading-relaxed mt-4">
+                        <p class="text-gray-700 leading-relaxed mt-4 text-sm sm:text-base">
                             我们相信，每个学生都有独特的学习路径，每个家庭都有自己的教育节奏。筑学台的使命不是提供标准化的答案，而是为每个家庭配备精准的导航工具，让他们在教育的海洋中找到自己的方向。
                         </p>
                     </div>
 
                     <!-- 技术承诺 -->
-                    <div class="mb-10">
-                        <h2 class="text-xl font-bold mb-4">技术承诺</h2>
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="mb-8 sm:mb-10">
+                        <h2 class="text-lg sm:text-xl font-bold mb-4">技术承诺</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6">
                             <!-- 承诺1 -->
-                            <div class="card card-bordered p-6">
-                                <div class="h-12 w-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-primary">
+                            <div class="card card-bordered p-5 sm:p-6">
+                                <div class="h-10 sm:h-12 w-10 sm:w-12 bg-blue-100 rounded-full flex items-center justify-center mb-3 sm:mb-4 mx-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 sm:w-6 h-5 sm:h-6 text-primary">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
                                     </svg>
                                 </div>
-                                <h3 class="text-lg font-semibold mb-2">开源</h3>
-                                <p class="text-gray-600">
+                                <h3 class="text-base sm:text-lg font-semibold mb-2 text-center">开源</h3>
+                                <p class="text-gray-600 text-sm sm:text-base text-center">
                                     我们的核心工具与方法论将保持开源，欢迎教育同仁共同参与改进。
                                 </p>
                             </div>
 
                             <!-- 承诺2 -->
-                            <div class="card card-bordered p-6">
-                                <div class="h-12 w-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-primary">
+                            <div class="card card-bordered p-5 sm:p-6">
+                                <div class="h-10 sm:h-12 w-10 sm:w-12 bg-blue-100 rounded-full flex items-center justify-center mb-3 sm:mb-4 mx-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 sm:w-6 h-5 sm:h-6 text-primary">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
                                     </svg>
                                 </div>
-                                <h3 class="text-lg font-semibold mb-2">无广告</h3>
-                                <p class="text-gray-600">
+                                <h3 class="text-base sm:text-lg font-semibold mb-2 text-center">无广告</h3>
+                                <p class="text-gray-600 text-sm sm:text-base text-center">
                                     我们的平台将永远保持无广告状态，专注于提供纯粹的学习体验。
                                 </p>
                             </div>
 
                             <!-- 承诺3 -->
-                            <div class="card card-bordered p-6">
-                                <div class="h-12 w-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-primary">
+                            <div class="card card-bordered p-5 sm:p-6">
+                                <div class="h-10 sm:h-12 w-10 sm:w-12 bg-blue-100 rounded-full flex items-center justify-center mb-3 sm:mb-4 mx-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 sm:w-6 h-5 sm:h-6 text-primary">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
                                     </svg>
                                 </div>
-                                <h3 class="text-lg font-semibold mb-2">数据本地化</h3>
-                                <p class="text-gray-600">
+                                <h3 class="text-base sm:text-lg font-semibold mb-2 text-center">数据本地化</h3>
+                                <p class="text-gray-600 text-sm sm:text-base text-center">
                                     所有学习数据将存储在本地，保障隐私安全，让家庭安心使用。
                                 </p>
                             </div>
@@ -104,12 +104,12 @@ import Sidebar from '../components/Sidebar.astro';
 
                     <!-- 联系我们 -->
                     <div>
-                        <h2 class="text-xl font-bold mb-4">联系我们</h2>
-                        <p class="text-gray-700 leading-relaxed">
+                        <h2 class="text-lg sm:text-xl font-bold mb-4">联系我们</h2>
+                        <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
                             如果你对筑学台的工具与方法论感兴趣，或者有任何建议与合作意向，欢迎通过以下方式联系我们：
                         </p>
-                        <div class="mt-4">
-                            <a href="https://formspree.io/f/YOUR_FORM_ID" class="btn btn-primary text-white py-3 px-8 rounded-lg font-medium inline-block">
+                        <div class="mt-4 text-center">
+                            <a href="https://formspree.io/f/YOUR_FORM_ID" class="btn btn-primary text-white py-3 px-6 sm:px-8 rounded-lg font-medium inline-block">
                                 加入筑学台体验圈
                             </a>
                         </div>
