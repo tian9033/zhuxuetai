@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#3B82F6', // 教育蓝
+        primary: '#0047AB', // 建筑蓝
         secondary: '#F97316', // 活力橙
       },
     },
@@ -16,12 +16,12 @@ export default {
     themes: [
       {
         zhuxuetai: {
-          primary: '#3B82F6',
+          primary: '#0047AB',
           secondary: '#F97316',
           accent: '#10B981',
           neutral: '#1F2937',
           'base-100': '#FFFFFF',
-          info: '#3B82F6',
+          info: '#0047AB',
           success: '#10B981',
           warning: '#F59E0B',
           error: '#EF4444',

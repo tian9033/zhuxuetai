@@ -1,5 +1,6 @@
 ---
 import Navigation from '../components/Navigation.astro';
+import Sidebar from '../components/Sidebar.astro';
 ---
 
 <html lang="zh-CN">
@@ -8,76 +9,94 @@ import Navigation from '../components/Navigation.astro';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>筑学台 - 认知与心智底层逻辑学习平台</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/heroicons@2.1.5/outline.css">
+    <style>
+        /* 响应式布局 */
+        @media (max-width: 768px) {
+            .sidebar {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body class="bg-base-100 text-neutral">
     <Navigation />
     
-    <!-- 主横幅 -->
-    <section class="py-16 px-4 md:px-8 bg-gradient-to-b from-blue-50 to-white">
-        <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-2xl md:text-4xl font-bold mb-6 text-primary">
-                筑学有台，认知有方：以科学逻辑对冲教育熵增，守护家庭成长的独立航标。
-            </h1>
-            <p class="text-lg mb-10 text-gray-600">
-                基于认知科学与教育心理学，为家庭提供系统化的学习工具与方法论
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="/zhuxuetai/resources" class="btn btn-primary text-white py-3 px-8 rounded-lg font-medium">
-                    下载体验包
-                </a>
-                <a href="https://formspree.io/f/YOUR_FORM_ID" class="btn btn-secondary text-white py-3 px-8 rounded-lg font-medium">
-                    加入筑学台体验圈
-                </a>
-            </div>
+    <div class="flex">
+        <!-- 侧边栏 -->
+        <div class="sidebar hidden md:block">
+            <Sidebar />
         </div>
-    </section>
-
-    <!-- 产品卡片 -->
-    <section class="py-16 px-4 md:px-8">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-2xl font-bold mb-10 text-center">核心产品</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- 产品1 -->
-                <div class="card card-bordered p-6 shadow-md hover:shadow-lg transition-shadow">
-                    <div class="h-16 w-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-primary">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0 0V9" />
-                        </svg>
+        
+        <!-- 主内容区 -->
+        <main class="flex-1">
+            <!-- 主横幅 -->
+            <section class="py-16 px-4 md:px-8 bg-gradient-to-b from-blue-50 to-white">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h1 class="text-2xl md:text-4xl font-bold mb-6 text-primary">
+                        筑学有台，认知有方：以科学逻辑对冲教育熵增，守护家庭成长的独立航标。
+                    </h1>
+                    <p class="text-lg mb-10 text-gray-600">
+                        基于认知科学与教育心理学，为家庭提供系统化的学习工具与方法论
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="/zhuxuetai/resources" class="btn btn-primary text-white py-3 px-8 rounded-lg font-medium">
+                            下载体验包
+                        </a>
+                        <a href="https://formspree.io/f/YOUR_FORM_ID" class="btn btn-secondary text-white py-3 px-8 rounded-lg font-medium">
+                            加入筑学台体验圈
+                        </a>
                     </div>
-                    <h3 class="text-xl font-semibold mb-2">初中学科Anki牌组</h3>
-                    <p class="text-gray-600">7-9年级，分单元整理的学科知识点，科学记忆，高效复习</p>
                 </div>
+            </section>
 
-                <!-- 产品2 -->
-                <div class="card card-bordered p-6 shadow-md hover:shadow-lg transition-shadow">
-                    <div class="h-16 w-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-secondary">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
+            <!-- 产品卡片 -->
+            <section class="py-16 px-4 md:px-8">
+                <div class="max-w-6xl mx-auto">
+                    <h2 class="text-2xl font-bold mb-10 text-center">核心产品</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- 产品1 -->
+                        <div class="card card-bordered p-6 shadow-md hover:shadow-lg transition-shadow">
+                            <div class="h-16 w-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-primary">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0 0V9" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">初中学科Anki牌组</h3>
+                            <p class="text-gray-600">7-9年级，分单元整理的学科知识点，科学记忆，高效复习</p>
+                        </div>
+
+                        <!-- 产品2 -->
+                        <div class="card card-bordered p-6 shadow-md hover:shadow-lg transition-shadow">
+                            <div class="h-16 w-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-secondary">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">近五年中考真题库</h3>
+                            <p class="text-gray-600">原子化、可检索的中考真题，精准定位考点，针对性练习</p>
+                        </div>
+
+                        <!-- 产品3 -->
+                        <div class="card card-bordered p-6 shadow-md hover:shadow-lg transition-shadow">
+                            <div class="h-16 w-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-green-600">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">错题管理系统</h3>
+                            <p class="text-gray-600">系统化收集、分析、复习错题，构建个人知识漏洞地图</p>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-semibold mb-2">近五年中考真题库</h3>
-                    <p class="text-gray-600">原子化、可检索的中考真题，精准定位考点，针对性练习</p>
                 </div>
+            </section>
 
-                <!-- 产品3 -->
-                <div class="card card-bordered p-6 shadow-md hover:shadow-lg transition-shadow">
-                    <div class="h-16 w-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-green-600">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">错题管理系统</h3>
-                    <p class="text-gray-600">系统化收集、分析、复习错题，构建个人知识漏洞地图</p>
+            <!-- 底部信息 -->
+            <footer class="bg-gray-50 py-10 px-4 border-t">
+                <div class="max-w-6xl mx-auto text-center">
+                    <p class="text-gray-600">© 2026 筑学台 | 以科学逻辑守护家庭成长</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 底部信息 -->
-    <footer class="bg-gray-50 py-10 px-4 border-t">
-        <div class="max-w-6xl mx-auto text-center">
-            <p class="text-gray-600">© 2026 筑学台 | 以科学逻辑守护家庭成长</p>
-        </div>
-    </footer>
+            </footer>
+        </main>
+    </div>
 </body>
 </html>
