@@ -1,0 +1,57 @@
+<nav class="bg-white border-b sticky top-0 z-10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+            <div class="flex items-center">
+                <a href="/zhuxuetai/" class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-bold text-primary">筑学台</span>
+                </a>
+            </div>
+            <div class="hidden md:flex md:items-center md:space-x-8">
+                <a href="/zhuxuetai/" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">
+                    首页
+                </a>
+                <a href="/zhuxuetai/resources" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">
+                    资源
+                </a>
+                <a href="/zhuxuetai/about" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">
+                    关于
+                </a>
+            </div>
+            <div class="md:hidden flex items-center">
+                <button type="button" class="mobile-menu-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- 移动端菜单 -->
+    <div class="md:hidden hidden mobile-menu">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a href="/zhuxuetai/" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary">
+                首页
+            </a>
+            <a href="/zhuxuetai/resources" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary">
+                资源
+            </a>
+            <a href="/zhuxuetai/about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary">
+                关于
+            </a>
+        </div>
+    </div>
+</nav>
+
+<script>
+    // 移动端菜单切换
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        if (menuButton && mobileMenu) {
+            menuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    });
+</script>
